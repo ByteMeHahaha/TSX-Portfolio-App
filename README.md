@@ -1,5 +1,8 @@
 # Ethan K.'s TypeScript Portfolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2a1aeae7-026d-40a4-be06-968e7e7857c1/deploy-status)](https://app.netlify.com/projects/ethankportfolio/deploys)
+[![Mocha Unit Testing](https://github.com/ByteMeHahaha/TSX-Portfolio-App/actions/workflows/RunUnitTests.yml/badge.svg)](https://github.com/ByteMeHahaha/TSX-Portfolio-App/actions/workflows/RunUnitTests.yml)
+
 A TypeScript React app used as my portfolio.
 
 - Author: Ethan Kletschke
