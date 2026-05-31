@@ -1,9 +1,9 @@
-import type { FormEventHandler, ReactNode } from "react";
+import type { ReactNode, SubmitEventHandler } from "react";
 import styles from "./Form.module.css";
 
 type FormProps = {
   // The form onSubmit handler
-  submitHandler?: FormEventHandler<HTMLFormElement>;
+  submitHandler?: SubmitEventHandler<HTMLFormElement>;
   // The child elements of the component, i.e. the form controls.
   children: ReactNode;
   // Is the form in a dialog?
@@ -12,7 +12,7 @@ type FormProps = {
 
 export default function Form({ submitHandler, children, dialog }: FormProps) {
   // Default form submit handler if one isn't supplied
-  const defaultHandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const defaultHandleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     // Prevent page refresh on submit
     e.preventDefault();
   };
