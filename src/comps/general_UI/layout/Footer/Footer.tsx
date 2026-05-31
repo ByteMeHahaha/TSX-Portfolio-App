@@ -8,7 +8,7 @@ export default function Footer() {
       <p>&copy; Ethan Kletschke, {/* Copyright year */ new Date().getFullYear()}</p>
 
       {/* Version number in footer */}
-      <p className={styles.version}>v3.3</p> {/* NB -> Remember to update */}
+      <p className={styles.version}>v3.4</p> {/* NB -> Remember to update */}
     </footer>
   );
 }

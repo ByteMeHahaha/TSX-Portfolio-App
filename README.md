@@ -6,7 +6,7 @@
 A TypeScript React app used as my portfolio.
 
 - Author: Ethan Kletschke
-- Version: `3.3.0`
+- Version: `3.4.0`
 - Development Environment: Ubuntu (WSL)
   - Initially tested on MS Edge, mostly tested on Mozilla Firefox
     - Screenshots taken from output on Firefox
@@ -39,7 +39,7 @@ prohibited for my app.
     - [Running the App Yourself](#running-the-app-yourself)
   - [Pages](#pages)
     - [About Me](#about-me)
-    - [Cards Demo (WIP)](#cards-demo-wip)
+    - [Cards Demo](#cards-demo)
     - [Consecutive Summation](#consecutive-summation)
     - [Custom Email Validator](#custom-email-validator)
     - [Stopwatch Page](#stopwatch-page)
@@ -109,16 +109,16 @@ I should work on:
 ### Running the App Yourself
 
 As of 2026-01-14, this site is
-[live on Netlify](https://ethankletschke.netlify.app/). But if you want to clone
+[live on Netlify](https://ethankportfolio.netlify.app/). But if you want to clone
 this repository, you have two ways to run this app:
 
-For the heavily tested "dev" version:
+For the development version:
 
 1. Run `npm run dev` via a terminal in the project folder. This will run Vite's
    development server in the terminal.
 2. Type `o` and press enter to open the app in your browser.
 
-For the seemingly identical production version:
+For the identical production version:
 
 1. Run `npm run build` to build the production version of the app.
 2. Run `npm run preview` to run the built production app.
@@ -141,9 +141,10 @@ A page discussing me and my confidence in my skills.
 
 ![Output Screenshot](./README_screenshots/About.png)
 
-### Cards Demo (WIP)
+### Cards Demo
 
-A small page demonstrating fully styled "Card" components.
+A small page demonstrating fully styled "Card" components for locations and for
+"users".
 
 ![Output](./README_screenshots/CardsBasic.png)
 
@@ -175,7 +176,8 @@ Example of output:
 
 On this page, you can validate an entered email address, and the app will
 automatically validate the email as you type it using a custom RegEx instead of
-the browser's built-in `email` input validator. Supports `email` autocomplete.
+the browser's built-in `email` input validator. Supports autocomplete for
+previously entered emails.
 
 Example of output:
 
@@ -195,6 +197,7 @@ Example of output on Firefox:
 ### Numeric Acronym Generator
 
 A page that generates a numeric acronym out of a word.
+
 A numeric acronym is an abbreviation of a word (especially in IT
 documentation) that is made up of the word's first letter,
 its last letter, and the number of characters in between the
@@ -209,8 +212,8 @@ Example of output for `internationalisation`:
 
 _Idea Credit: My hilariously slow phone_
 
-A simple page that just takes a word and builds a new string where each
-word's character is repeated up to its index in the word.
+A page that takes a word and builds a new string where each word's character is
+repeated up to its index in the word, excluding spaces.
 
 For example, `hey there buddy` will become
 `hheheytththethertherebbubudbuddbuddy`.
@@ -233,6 +236,8 @@ Example of Output:
 
 When you click on a button, rolls the die, and displays the die face, along with
 averages and totals for your roll streak.
+
+Note that the first roll of each die face
 
 Example of Output:
 
@@ -258,7 +263,7 @@ Output after clearing:
 
 ### Dialog Box Demo
 
-A small page demonstrating fully-styled dialog boxes of 3 types:
+A page demonstrating fully-styled dialog boxes of 3 types:
 
 1. Alert Box
    - A box with a short message and an "OK" button.

@@ -4,14 +4,14 @@
 project-meta:
   project-name: Ethan's Portfolio Project
   date-started: 2025-09-27 # Approximate
-  last-updated: 2026-04-17 # REMEMBER -> Update last-updated
+  last-updated: 2026-05-31 # REMEMBER -> Update last-updated
   languages:
     - React
     - TypeScript
     - CSS
   status: Stable
   license: MIT
-  version: 3.3.0
+  version: 3.4.0
 
 build:
   dev-environments:
