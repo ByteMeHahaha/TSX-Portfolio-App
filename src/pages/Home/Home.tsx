@@ -90,16 +90,22 @@ export default function Home() {
       title: "Word Counter",
       icon: "⒲⒞=②",
       subtitle: "Counts a specified word in a provided paragraph"
+    },
+    {
+      route: "/htmlComments",
+      title: "HTML Comment Extractor",
+      icon: "← ⒶⒷⒸ →",
+      subtitle: "Extracts the text from a provided HTML comment"
     }
   ];
 
-  // Sort the links
+  // Sort the links alphabetically by title
   const sortedLinks = sortObjects(links, "title");
 
   return (
     <Page headerText="Ethan Kletschke's Portfolio">
       {/* Heading with instruction */}
-      <h2 className={styles.heading}>Select a Page to Go To</h2>
+      <h2 className={styles.heading}>Select a page to go to</h2>
 
       {/* Create the table of contents with the sorted links */}
       <ContentsTable cards={sortedLinks} />
