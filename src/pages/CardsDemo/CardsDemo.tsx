@@ -10,6 +10,7 @@ interface UserCardObj {
   username: string;
   displayName: string;
   imgSrc: string;
+  disabled?: boolean;
 }
 
 export default function CardsDemo() {
@@ -24,6 +25,12 @@ export default function CardsDemo() {
       username: "ethanKletschke",
       displayName: "Ethan K.",
       imgSrc: "/EthanPFP.webp"
+    },
+    {
+      username: "deleted_user_198021314",
+      displayName: "Deleted User",
+      imgSrc: "/AnonPFP.webp",
+      disabled: true
     }
   ];
 
@@ -40,7 +47,7 @@ export default function CardsDemo() {
             imgCaption="The Eiffel Tower"
             imgSrc="/Eiffel.webp"
           >
-            <p> 
+            <p>
               Paris is the capital (and most well-known) city in
               France. It is home to the world-renowned Eiffel Tower. Paris is also
               known as the city of love.
@@ -55,7 +62,7 @@ export default function CardsDemo() {
           >
             <p>
               Moscow is the capital city of Russia. The Saint Basil's Cathedral
-              pictured above is situated in Moscow's Red Square, and is iconic 
+              pictured above is situated in Moscow's Red Square, and is iconic
               for its unique and beautiful appearance.
             </p>
           </Card>
@@ -67,7 +74,7 @@ export default function CardsDemo() {
             imgSrc="/Liberty.webp"
           >
             <p>
-              New York City is a major city in the USA. It is home to the 
+              New York City is a major city in the USA. It is home to the
               Statue of Liberty, a copper statue gifted to the US by France.
               It has since corroded from a bronze colour to a dull green.
             </p>
@@ -82,11 +89,12 @@ export default function CardsDemo() {
 
         <CardGrid>
           {userCards.map((card, index) => (
-            <UserCard 
-              key={index} 
-              username={card.username} 
-              displayName={card.displayName} 
+            <UserCard
+              key={index}
+              username={card.username}
+              displayName={card.displayName}
               imgSrc={card.imgSrc}
+              disabled={card.disabled ?? false}
             />
           ))}
         </CardGrid>
