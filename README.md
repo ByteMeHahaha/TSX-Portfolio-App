@@ -144,9 +144,11 @@ A page discussing me and my confidence in my skills.
 ### Cards Demo
 
 A small page demonstrating fully styled "Card" components for locations and for
-"users".
+"users" of the app.
 
 ![Output](./README_screenshots/CardsBasic.png)
+
+![Output](./README_screenshots/UserCards.png)
 
 ### Consecutive Summation
 
