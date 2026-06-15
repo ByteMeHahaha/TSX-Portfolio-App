@@ -9,10 +9,17 @@ type CardProps = {
   imgSrc: string;
   footerText: string;
   imgCaption: string;
+  disabled?: boolean;
 };
 
 // Simple card
-export default function Card({ children, title, imgSrc, footerText, imgCaption }: CardProps) {
+export default function Card({
+  children,
+  title,
+  imgSrc,
+  footerText,
+  imgCaption
+}: CardProps) {
   return (
     // Card wrapper div
     <div className={styles.card}>

@@ -4,7 +4,7 @@
 project-meta:
   project-name: Ethan's Portfolio Project
   date-started: 2025-09-27 # Approximate
-  last-updated: 2026-05-31 # REMEMBER -> Update last-updated
+  last-updated: 2026-06-15 # REMEMBER -> Update last-updated
   languages:
     - React
     - TypeScript
