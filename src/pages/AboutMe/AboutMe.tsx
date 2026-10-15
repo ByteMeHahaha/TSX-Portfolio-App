@@ -131,7 +131,7 @@ export default function AboutMe() {
           <ul>
             <li><a href="mailto:ethankletschke@outlook.com">Email Me (ethankletschke@outlook.com)</a></li>
             <li><a href="https://github.com/ethanKletschke">ethanKletsche (GitHub)</a></li>
-            <li><a href="www.linkedin.com/in/ethan-kletschke-164a24384">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/ethan-kletschke-164a24384">LinkedIn</a></li>
           </ul>
         </article>
       </section>
